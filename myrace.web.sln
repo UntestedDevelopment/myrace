@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myrace.web", "myrace.web\myrace.web.csproj", "{F9F15E04-928A-4BA3-AC4A-47C69E065FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9F15E04-928A-4BA3-AC4A-47C69E065FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F15E04-928A-4BA3-AC4A-47C69E065FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F15E04-928A-4BA3-AC4A-47C69E065FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F15E04-928A-4BA3-AC4A-47C69E065FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CDCE3AC-21BC-4132-8E0E-0A0DA610954D}
+	EndGlobalSection
+EndGlobal
