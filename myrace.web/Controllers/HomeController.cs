@@ -12,6 +12,7 @@ namespace myrace.web.Controllers
     {
         public IActionResult Index()
         {
+            System.Diagnostics.Trace.TraceInformation("Index view requested");
             return View();
         }
 
