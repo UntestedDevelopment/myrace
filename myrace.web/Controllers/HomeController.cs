@@ -18,6 +18,7 @@ namespace myrace.web.Controllers
 
         public IActionResult About()
         {
+            System.Diagnostics.Trace.TraceInformation("About view requested");
             ViewData["Message"] = "Your application description page.";
 
             return View();
@@ -25,6 +26,7 @@ namespace myrace.web.Controllers
 
         public IActionResult Contact()
         {
+            System.Diagnostics.Trace.TraceInformation("Contact view requested");
             ViewData["Message"] = "Your contact page.";
 
             return View();
@@ -32,6 +34,7 @@ namespace myrace.web.Controllers
 
         public IActionResult Error()
         {
+            System.Diagnostics.Trace.TraceError("Error action triggered");
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
