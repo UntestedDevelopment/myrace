@@ -3,16 +3,27 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using myrace.web.Models;
 
 namespace myrace.web.Controllers
 {
     public class HomeController : Controller
     {
+        private ILogger<HomeController> _logger;
+        private TelemetryClient telemetry = new TelemetryClient();
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
         public IActionResult Index()
         {
-            System.Diagnostics.Trace.TraceInformation("Index view requested");
+            _logger.LogDebug("Index view requested");
+            telemetry.TrackTrace("Index view requested", SeverityLevel.Information);
             return View();
         }
 
