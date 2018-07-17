@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using myrace.web.Models;
@@ -27,6 +28,7 @@ namespace myrace.web.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult About()
         {
             System.Diagnostics.Trace.TraceInformation("About view requested");
